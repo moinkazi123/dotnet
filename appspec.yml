@@ -5,18 +5,18 @@ files:
     destination: C:\inetpub\wwwroot\MyApp
 hooks:
   BeforeInstall:
-    - location: scripts/BeforeInstall.ps1
+    - location: MyApp/scripts/BeforeInstall.ps1
       timeout: 300
       runas: Administrator
   AfterInstall:
-    - location: scripts/AfterInstall.ps1
+    - location: MyApp/scripts/AfterInstall.ps1
       timeout: 300
       runas: Administrator
   ApplicationStart:
-    - location: scripts/ApplicationStart.ps1
+    - location: MyApp/scripts/ApplicationStart.ps1
       timeout: 300
       runas: Administrator
   ValidateService:
-    - location: scripts/ValidateService.ps1
+    - location: MyApp/scripts/ValidateService.ps1
       timeout: 300
       runas: Administrator
